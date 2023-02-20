@@ -1,0 +1,10 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.container">
+            <container name="header.banner.container" htmlTag="div" htmlClass="header-banner" before="-">
+                <block class="Magento\Framework\View\Element\Template" name="header.banner.block" template="Magento_Theme::header-banner.phtml" ifconfig="carriers/freeshipping/active"/>
+            </container>
+        </referenceContainer>
+        <move element="form.subscribe" destination="main.content" after="-" />
+    </body>
+</page>
